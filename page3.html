@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>site test pour notre site internet</title>
+    <link rel="stylesheet" href="style.css">
+    <button id="mode-toggle">☀️</button>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo M rouge" class="logo">
+        <nav>
+            <a href="index.html">Accueil</a>
+            <a href="page1.html">Bearbrick & Art / Street Art </a>
+            <a href="page3.html">Galerie </a>
+        </nav>
+    </header> 
+    <main>
+        <h1 class="title">Galerie</h1> <br>  
+        <p>Ici vous pourrez voir plusieurs des meilleurs oeuvres que cela soit des Be@rbrick, des oeuvres banksy, de keith haring ou encore des figures kaws, leur meilleurs oeuvres seront exposé ici.<br>
+            <br>
+        <div class="artwork">
+            <img src="https://images.stockx.com/images/KAWS-Companion-Open-Edition-Vinyl-Figure-Black-Blush-Brown-Grey-Set.jpg?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1611612882" alt="Kaws X Companion" class="galerie" /> 
+            <p class="artwork_info"> Kaws X Companion => 800€</p>
+        </div>
+        <div class="artwork">
+            <img src="https://images.stockx.com/images/KAWS-What-Party-Figure-Set-1.jpg?fit=fill&bg=FFFFFF&w=1200&h=857&q=60&dpr=1&trim=color&updated_at=1611612823" alt="Kaws What's Party" class="galerie"/> 
+            <p class="artwork_info">Kaws What's Party => 900€</p>
+        </div>
+        <div class="artwork">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0c/Banksy_Girl_and_Heart_Balloon_%282840632113%29.jpg" alt="Banksy La fille au ballon" class="galerie"/> 
+            <p class="artwork_info">Banksy La fille au ballon => 15 000€</p>
+        </div>
+        <div class="artwork">   
+            <img src="https://cdn.shopify.com/s/files/1/0065/1057/5680/files/banksy_flower_8f294483-922e-49e5-9f49-41acde3fd003.jpg?v=1615905148" alt="Banksy Lanceur de fleur" class="galerie"/> 
+            <p class="artwork_info"> Banksy Lanceur de fleur => 3 500€</p>
+        </div> 
+        <div class="artwork">   
+            <img src="https://www.haring.com/!/wp-content/uploads/2012/12/radiant_baby_90.jpg" alt="Keith Haring bebe radieux" class="galerie"/>
+            <p class="artwork_info"> Keith Haring bebe radieux => 940€</p>
+        </div> 
+        <div class="artwork">   
+            <img src="https://maitrefrancois.com/wp-content/uploads/2017/11/keith-haring-1987-sans-titre-dance.jpg?w=604" alt="Keith Haring personnage dansant" class="galerie"/> 
+            <p class="artwork_info">Keith Haring personnage dansant => 880€</p>
+        </div> 
+        <div class="artwork">   
+            <img src="https://images.stockx.com/images/Bearbrick-Kaws-Dissected-1000-Black.png?fit=fill&bg=FFFFFF&w=700&h=500&fm=webp&auto=compress&q=90&dpr=2&trim=color&updated_at=1616758085" alt="Bearbrick kaws disséqué" class="galerie"/> 
+            <p class="artwork_info">Bearbrick kaws disséqué => 1 210€</p>
+        </div>  
+        <div class="artwork">  
+            <img src="https://shop.beartgallery.fr/cdn/shop/products/Captured_ecran2023-04-18a18.49.35_1200x1200.png?v=1681836621" alt="Bearbrick Keith Haring" class="galerie"/> 
+            <p class="artwork_info">Bearbrick Keith Haring => 1 500€</p>
+        </div>    
+            <br>
+        </p>
+        <h1 class="title">Formulaire de commande</h1> <br>  
+        <form method="POST" class="formulaire">
+            <label for="surname">Prenom :</label>
+            <input type="text" id="surname" name="surname" placeholder="Eric" required>
+
+            <label for="name">Nom :</label>
+            <input type="text" id="name" name="name" placeholder="Dupont" required>
+
+            <label for="E-mail">Mail :</label>
+            <input type="text" id="E-mail" name="E-mail" placeholder="eric.dupont@example.com" required>
+
+            <label for="Phone">Phone :</label>
+            <input type="tel" id="Phone" name="Phone" placeholder="07 xx xx xx xx">
+
+            <label for="Adresse">Adresse</label>
+            <input type="text" id="Adresse" name="Adresse" placeholder="10 rue du petit chemin" required>
+
+            <label for="Ville">Ville</label>
+            <input type="text" id="Ville" name="Ville" placeholder="Paris" required>
+
+            <label for="CP">CP</label>
+            <input type="number" id="CP" name="CP" placeholder="75000" required>
+
+
+            <label for="produit">Choisissez une œuvre :</label>
+            <select id="produit" name="produit">
+                <option value="Kaws X Companion">Kaws X Companion</option>
+                <option value="Kaws What's Party">Kaws What's Party</option>
+                <option value="Banksy La fille au ballon">Banksy La fille au ballon</option>
+                <option value="Banksy Lanceur de fleur">Banksy Lanceur de fleur</option>
+                <option value="Keith Haring bebe radieux">Keith Haring bebe radieux</option>
+                <option value="Keith Haring personnage dansant">Keith Haring personnage dansant</option>
+                <option value="Bearbrick kaws disséqué">Bearbrick kaws disséqué</option>
+                <option value="Bearbrick Keith Haring">Bearbrick Keith Haring</option>
+            </select><br>
+            <br>        
+            <br>
+            <div class="radio-group">
+                <p>Préférez-vous :</p>
+                <label>
+                    <input type="radio" name="preference" value="collectionner"> Collectionner
+                </label>
+                <label>
+                    <input type="radio" name="preference" value="exposer"> Exposer
+                </label>
+                <label>
+                    <input type="radio" name="preference" value="acheter"> Acheter
+                </label>
+            </div>
+            
+            <div class="checkbox-group">
+                <p>Vos préférences :</p>
+                <label>
+                    <input type="checkbox" name="newsletter"> Recevoir la newsletter
+                </label>
+                <label>
+                    <input type="checkbox" name="promotions"> Être informé des promotions
+                </label>
+                <label>
+                    <input type="checkbox" name="events"> Invitations aux événements
+                </label>
+            </div>
+            <button id="button" type="button">Envoyer</button>         
+        </form>
+    </main> 
+    <script src="script.js"></script>  
+</body>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 MonSiteWeb. Tous droits réservés.</p>
+        <div class="footer-section contact">
+            <h3>Contact</h3>
+            <p>Email: contact-galerie@gmail.com</p>
+            <p>Téléphone: 01 23 45 67 89</p>
+        </div>
+        <ul>
+            <li><a href="#about">À propos</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
+</footer>
+</html> 

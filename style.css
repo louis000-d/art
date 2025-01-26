@@ -1,0 +1,236 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(249, 249, 249);
+    color: rgb(18, 18, 18);
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+header {
+    background-color: #E3F2FD;
+    padding: 10px 0;
+    position: sticky; /* La barre reste en haut */
+    top: 0;
+    z-index: 1000;
+}
+.logo {
+    position: absolute;
+    top: -40px;
+    right: 10px;
+    width: 75px;
+    height: auto;
+    transform: rotate(45deg);
+    z-index: 10; 
+  }
+/* Style des liens de navigation */
+header nav a {
+    margin: 0 15px;
+    text-decoration: none; /* Supprime le soulignement */
+    color: rgb(13, 71, 161);
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet au survol des liens */
+header nav a:hover {
+    color: #64B5F6;
+}
+
+/* Centrage du menu */
+header nav {
+    text-align: center;
+}
+
+/* Style pour rendre le menu responsive */
+
+.title{
+    text-align: center;
+}
+.small {
+    width: 17%;           /* Réduit la taille des images à 20% de la largeur du paragraphe */
+    display: inline-block; /* Force les images à être traitées comme des éléments en ligne */
+    margin-right: 10px;    /* Ajoute un petit espace entre les images */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Ombre portée */
+}
+.large{
+    width: 10%;           /* Réduit la taille des images à 20% de la largeur du paragraphe */
+    display: inline-block; /* Force les images à être traitées comme des éléments en ligne */
+    margin-right: 10px;    /* Ajoute un petit espace entre les images */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Ombre portée */
+}
+.medium{
+    width: 200px;           /* Réduit la taille des images à 20% de la largeur du paragraphe */
+    display: inline-block;
+    margin-right: 10px;    /* Ajoute un petit espace entre les images */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    
+}
+.galerie{
+    width: 200px;           /* Réduit la taille des images à 20% de la largeur du paragraphe */
+    display: inline-block;
+    margin-right: 10px;    /* Ajoute un petit espace entre les images */
+    border-radius: 10px; /* Coins arrondis */
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5); /* Ombre portée */
+    
+}
+/* Formulaire encadré */
+.formulaire {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff15;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgb(123, 123, 123);
+    border: 3px solid #000000;
+}
+
+/* Style des labels */
+.formulaire label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #000000;
+}
+/* Style des champs de texte */
+.formulaire input,
+.formulaire textarea {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #ffffff8c;
+}
+.formulaire button{
+    width: 30%;
+    display:block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background-color: #818181;
+}
+/* Conteneur principal des groupes */
+.radio-group, .checkbox-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; /* Organisation verticale des options */
+    gap: 10px; /* Espace entre les lignes */
+}
+
+/* Style des labels pour aligner les boutons et le texte */
+.radio-group label, .checkbox-group label {
+    display: flex;
+    flex-direction: row-reverse; /* Place le texte à gauche et le bouton à droite */
+    justify-content: flex-start; /* Aligne le contenu à gauche */
+    align-items: center; /* Aligne verticalement le bouton et le texte */
+    gap: 10px; /* Espace entre le bouton et le texte */
+    font-size: 14px;
+    color: #000000;
+}
+
+/* Boutons radio et cases à cocher */
+input[type="radio"], input[type="checkbox"] {
+    accent-color: #8f8f8f; /* Couleur personnalisée */
+    transform: scale(1.2); /* Agrandit légèrement les boutons */
+    cursor: pointer;
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+/* Style pour chaque œuvre */
+.artwork {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Style des images */
+.artwork img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Style des infos sous chaque image */
+.artwork-info {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: rgb(0, 22, 165);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+table {
+    width: 70%;
+    border-collapse:collapse;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;   
+}
+th, td {
+    border: 1px solid #000000;
+    padding: 5px;
+}
+thead {
+    background-color: #a9a9a9;
+}
+thead tr{
+    font-size: 20px;
+}
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+.custom-link{
+    color: #64B5F6;
+}
+footer {
+    background-color: #a7a7a7; /* Fond du footer */
+    color: #fff;              /* Texte en blanc */
+    padding: 30px 50px;       /* Espacement interne */
+}
+
+.footer-content {
+    display: flex;                /* Utilisation de Flexbox */
+    justify-content: space-between; /* Aligne les éléments horizontalement */
+    align-items: center;          /* Aligne verticalement les éléments */
+    text-align: center;           /* Centre le texte */
+    flex-wrap: wrap;              /* Gère les petits écrans */
+}
+
+footer p {
+    margin: 0;                   /* Supprime la marge autour du paragraphe */
+}
+
+.footer-section.contact {
+    text-align: center;          /* Centre le texte dans la section contact */
+}
+
+footer ul {
+    list-style-type: none;       /* Supprime les puces */
+    margin: 0;                   /* Supprime la marge */
+    padding: 0;                  /* Supprime le padding */
+    display: flex;               /* Affiche les éléments en ligne */
+}
+
+footer ul li {
+    margin: 0 15px;              /* Espacement entre les éléments */
+}
+
+footer ul li a {
+    color: #fff;                 /* Couleur des liens */
+    text-decoration: none;       /* Supprime la décoration */
+}
+
+footer ul li a:hover {
+    color: #64B5F6;              /* Couleur au survol */
+}

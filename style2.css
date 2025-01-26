@@ -1,0 +1,227 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(18, 18, 18);
+    color: rgb(220, 220, 220);
+    margin: 0;
+    padding: 0;
+    transition: all 0.3s ease;
+}
+
+header {
+    background-color: #1f1f1f;
+    padding: 10px 0;
+    position: sticky; /* La barre reste en haut */
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    position: absolute;
+    top: -40px;
+    right: 10px;
+    width: 75px;
+    height: auto;
+    transform: rotate(45deg);
+    z-index: 10; 
+}
+
+/* Style des liens de navigation */
+header nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: rgb(144, 202, 249);
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+/* Effet au survol des liens */
+header nav a:hover {
+    color: #82b1ff;
+}
+
+/* Centrage du menu */
+header nav {
+    text-align: center;
+}
+
+.title {
+    text-align: center;
+}
+
+.small, .large, .medium, .galerie {
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+.formulaire {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #1e1e1e;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.9);
+    border: 3px solid #333333;
+}
+
+/* Style des labels */
+.formulaire label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #cccccc;
+}
+
+/* Style des champs de texte */
+.formulaire input,
+.formulaire textarea {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 2px solid #444444;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #2c2c2c;
+    color: #ffffff;
+}
+
+.formulaire button {
+    width: 30%;
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    background-color: #444444;
+    color: #ffffff;
+}
+
+/* Conteneur principal des groupes */
+.radio-group, .checkbox-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column; /* Organisation verticale des options */
+    gap: 10px; /* Espace entre les lignes */
+}
+
+/* Style des labels pour aligner les boutons et le texte */
+.radio-group label, .checkbox-group label {
+    display: flex;
+    flex-direction: row-reverse; /* Place le texte à gauche et le bouton à droite */
+    justify-content: flex-start; /* Aligne le contenu à gauche */
+    align-items: center; /* Aligne verticalement le bouton et le texte */
+    gap: 10px; /* Espace entre le bouton et le texte */
+    font-size: 14px;
+    color: #cccccc;
+}
+
+/* Boutons radio et cases à cocher */
+input[type="radio"], input[type="checkbox"] {
+    accent-color: #777777; /* Couleur personnalisée */
+    transform: scale(1.2); /* Agrandit légèrement les boutons */
+    cursor: pointer;
+    margin: 0; /* Supprime les marges par défaut */
+}
+
+/* Style pour chaque œuvre */
+.artwork {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+/* Style des images */
+.artwork img {
+    width: 300px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+}
+
+/* Style des infos sous chaque image */
+.artwork-info {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #cccccc;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: transparent;
+    color: #ff5252;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+table {
+    width: 70%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 15px;
+    text-align: center;   
+}
+
+th, td {
+    border: 1px solid #444444;
+    padding: 5px;
+    color: #ffffff;
+}
+
+thead {
+    background-color: #333333;
+}
+
+thead tr {
+    font-size: 20px;
+}
+
+tr:nth-child(even) {
+    background-color: #252525;
+}
+
+.custom-link {
+    color: #82b1ff;
+}
+
+footer {
+    background-color: #1f1f1f; /* Fond du footer */
+    color: #cccccc; /* Texte */
+    padding: 30px 50px; /* Espacement interne */
+}
+
+.footer-content {
+    display: flex; /* Utilisation de Flexbox */
+    justify-content: space-between; /* Aligne les éléments horizontalement */
+    align-items: center; /* Aligne verticalement les éléments */
+    text-align: center; /* Centre le texte */
+    flex-wrap: wrap; /* Gère les petits écrans */
+}
+
+footer p {
+    margin: 0; /* Supprime la marge autour du paragraphe */
+}
+
+.footer-section.contact {
+    text-align: center; /* Centre le texte dans la section contact */
+}
+
+footer ul {
+    list-style-type: none; /* Supprime les puces */
+    margin: 0; /* Supprime la marge */
+    padding: 0; /* Supprime le padding */
+    display: flex; /* Affiche les éléments en ligne */
+}
+
+footer ul li {
+    margin: 0 15px; /* Espacement entre les éléments */
+}
+
+footer ul li a {
+    color: #cccccc; /* Couleur des liens */
+    text-decoration: none; /* Supprime la décoration */
+}
+
+footer ul li a:hover {
+    color: #82b1ff; /* Couleur au survol */
+}
